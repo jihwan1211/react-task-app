@@ -1,4 +1,4 @@
-import { ITask, TBoardState, TLoggerState, TModalState, ILogItem, TUserState } from "../../types";
+import { ITask, TBoardState, TLoggerState, TModalState, TUserState } from "../../types";
 import { StateCreator } from "zustand";
 
 export const createModalSlice: StateCreator<TBoardState & TLoggerState & TModalState & TUserState, [], [], TModalState> = (set) => ({

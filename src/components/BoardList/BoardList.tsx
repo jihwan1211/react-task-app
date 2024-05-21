@@ -15,7 +15,7 @@ type Props = {
 export default function BoardList({ activeBoardId, setActiveBoardId }: Props) {
   const boardArr = useBoundStore((state) => state.boardArray);
   const setUser = useBoundStore((state) => state.setUser);
-  const { isAuth, email, id } = useAuth();
+  const { isAuth } = useAuth();
   const resetUser = useBoundStore((state) => state.resetUser);
 
   const auth = getAuth(app);
